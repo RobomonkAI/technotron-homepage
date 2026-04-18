@@ -1,0 +1,4 @@
+{
+  "extends": ["development"],
+  "ignore": ["frontend/dist/**", "**/node_modules/**"]
+}
