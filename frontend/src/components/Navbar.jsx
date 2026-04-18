@@ -1,4 +1,5 @@
 import { useState } from "react";
+import technotranLogo from "../assets/technotran-logo.webp";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -17,9 +18,14 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a
           href="#home"
-          className="text-lg font-semibold tracking-tight text-slate-900 transition hover:text-indigo-600"
+          className="flex shrink-0 items-center rounded-md py-0.5 outline-offset-2 transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-red-600"
         >
-          Technotran
+          <img
+            src={technotranLogo}
+            alt="Technotran"
+            className="h-9 w-auto max-w-[200px] object-contain object-left sm:max-w-[240px] md:max-w-[280px]"
+            decoding="async"
+          />
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -27,7 +33,7 @@ export default function Navbar() {
             <li key={label}>
               <a
                 href={href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
+                className="rounded-lg px-3 py-2 text-sm font-medium text-black transition hover:bg-red-50 hover:text-red-400"
               >
                 {label}
               </a>
@@ -40,20 +46,20 @@ export default function Navbar() {
             href="https://skillbuilder.robomonk.ai/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-indigo-200 hover:bg-slate-50 hover:text-indigo-700 md:inline-flex"
+            className="hidden rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-black shadow-sm transition hover:border-red-200 hover:bg-red-50 hover:text-red-400 md:inline-flex"
           >
             Internships
           </a>
           <a
             href="#quote"
-            className="hidden rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500 md:inline-flex"
+            className="hidden rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-red-700 md:inline-flex"
           >
             Get Quote
           </a>
 
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-lg border border-slate-200 p-2 text-slate-700 transition hover:bg-slate-50 md:hidden"
+            className="inline-flex items-center justify-center rounded-lg border border-slate-200 p-2 text-black transition hover:bg-red-50 hover:text-red-400 md:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
@@ -93,7 +99,7 @@ export default function Navbar() {
             <li key={label}>
               <a
                 href={href}
-                className="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900"
+                className="block rounded-lg px-3 py-2.5 text-sm font-medium text-black transition hover:bg-red-50 hover:text-red-400"
                 onClick={() => setOpen(false)}
               >
                 {label}
@@ -105,14 +111,14 @@ export default function Navbar() {
               href="https://skillbuilder.robomonk.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mb-2 block rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-center text-sm font-semibold text-slate-800 shadow-sm transition hover:border-indigo-200 hover:bg-slate-50"
+              className="mb-2 block rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-center text-sm font-semibold text-black shadow-sm transition hover:border-red-200 hover:bg-red-50 hover:text-red-400"
               onClick={() => setOpen(false)}
             >
               Internships
             </a>
             <a
               href="#quote"
-              className="block rounded-lg bg-indigo-600 px-3 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500"
+              className="block rounded-lg bg-red-600 px-3 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-red-700"
               onClick={() => setOpen(false)}
             >
               Get Quote

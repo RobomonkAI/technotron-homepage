@@ -16,21 +16,21 @@ export default function ContactSnippetSection() {
         />
 
         <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-indigo-200 hover:shadow-md md:col-span-1">
-            <h3 className="text-sm font-bold uppercase tracking-wide text-indigo-600">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-red-200 hover:shadow-md md:col-span-1">
+            <h3 className="text-sm font-bold uppercase tracking-wide text-red-600">
               Email Us
             </h3>
             <p className="mt-2 text-sm text-slate-600">General Enquiries:</p>
             <a
               href="mailto:info@robomonk.ai"
-              className="mt-1 block break-all text-base font-semibold text-slate-900 underline-offset-2 hover:text-indigo-600 hover:underline"
+              className="mt-1 block break-all text-base font-semibold text-slate-900 underline-offset-2 hover:text-red-600 hover:underline"
             >
               info@robomonk.ai
             </a>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-indigo-200 hover:shadow-md md:col-span-1">
-            <h3 className="text-sm font-bold uppercase tracking-wide text-indigo-600">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-red-200 hover:shadow-md md:col-span-1">
+            <h3 className="text-sm font-bold uppercase tracking-wide text-red-600">
               Call or WhatsApp
             </h3>
             <ul className="mt-3 space-y-3">
@@ -41,7 +41,7 @@ export default function ContactSnippetSection() {
                 >
                   <a
                     href={`tel:${tel}`}
-                    className="font-semibold text-slate-900 underline-offset-2 hover:text-indigo-600 hover:underline"
+                    className="font-semibold text-slate-900 underline-offset-2 hover:text-red-600 hover:underline"
                   >
                     {label}
                   </a>
@@ -52,7 +52,7 @@ export default function ContactSnippetSection() {
                     href={`https://wa.me/${wa}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-emerald-700 underline-offset-2 hover:underline"
+                    className="text-sm font-medium text-red-700 underline-offset-2 hover:underline"
                   >
                     WhatsApp
                   </a>
@@ -61,8 +61,8 @@ export default function ContactSnippetSection() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-indigo-200 hover:shadow-md md:col-span-1">
-            <h3 className="text-sm font-bold uppercase tracking-wide text-indigo-600">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:border-red-200 hover:shadow-md md:col-span-1">
+            <h3 className="text-sm font-bold uppercase tracking-wide text-red-600">
               Working Hours
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-700">
@@ -82,7 +82,7 @@ export default function ContactSnippetSection() {
           Prefer to start with scope and pricing?{" "}
           <a
             href="#quote"
-            className="font-semibold text-indigo-600 underline-offset-2 hover:underline"
+            className="font-semibold text-red-600 underline-offset-2 hover:underline"
           >
             Jump to project enquiry
           </a>

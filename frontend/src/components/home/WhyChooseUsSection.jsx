@@ -18,10 +18,10 @@ export default function WhyChooseUsSection() {
           {POINTS.map((text) => (
             <li
               key={text}
-              className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50/80 px-4 py-4 transition hover:border-indigo-200 hover:bg-white hover:shadow-md"
+              className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50/80 px-4 py-4 transition hover:border-red-200 hover:bg-white hover:shadow-md"
             >
               <span
-                className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-600"
+                className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-500/15 text-red-600"
                 aria-hidden
               >
                 <svg className="h-3.5 w-3.5" viewBox="0 0 12 12" fill="none">

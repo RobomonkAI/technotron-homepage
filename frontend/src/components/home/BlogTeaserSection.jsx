@@ -12,7 +12,7 @@ export default function BlogTeaserSection() {
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 rounded-2xl border border-dashed border-slate-300 bg-white/80 px-6 py-10 text-center">
           <p className="text-slate-600">
             Case studies, architecture notes, and build logs are on the way. Want early access? Reach out via{' '}
-            <a href="#contact" className="font-semibold text-indigo-600 underline-offset-2 hover:underline">
+            <a href="#contact" className="font-semibold text-red-600 underline-offset-2 hover:underline">
               contact
             </a>
             .
