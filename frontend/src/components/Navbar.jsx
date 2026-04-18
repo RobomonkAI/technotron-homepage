@@ -1,16 +1,16 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'About', href: '#about' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Contact', href: '#contact' },
-]
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "Projects", href: "#projects" },
+  { label: "About", href: "#about" },
+  { label: "Blog", href: "#blog" },
+  { label: "Contact", href: "#contact" },
+];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
@@ -60,11 +60,23 @@ export default function Navbar() {
           >
             <span className="sr-only">Toggle menu</span>
             {open ? (
-              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path strokeLinecap="round" d="M6 6l12 12M18 6L6 18" />
               </svg>
             ) : (
-              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" />
               </svg>
             )}
@@ -74,7 +86,7 @@ export default function Navbar() {
 
       <div
         id="mobile-menu"
-        className={`border-t border-slate-100 bg-white md:hidden ${open ? 'block' : 'hidden'}`}
+        className={`border-t border-slate-100 bg-white md:hidden ${open ? "block" : "hidden"}`}
       >
         <ul className="flex flex-col px-4 py-3">
           {NAV_LINKS.map(({ label, href }) => (
@@ -109,5 +121,5 @@ export default function Navbar() {
         </ul>
       </div>
     </header>
-  )
+  );
 }
