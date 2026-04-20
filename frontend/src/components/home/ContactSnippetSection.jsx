@@ -22,10 +22,10 @@ export default function ContactSnippetSection() {
             </h3>
             <p className="mt-2 text-sm text-slate-600">General Enquiries:</p>
             <a
-              href="mailto:info@robomonk.ai"
+              href="mailto:Info@technotran.in"
               className="mt-1 block break-all text-base font-semibold text-slate-900 underline-offset-2 hover:text-red-600 hover:underline"
             >
-              info@robomonk.ai
+              info@technotran.in
             </a>
           </div>
 

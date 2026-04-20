@@ -9,7 +9,8 @@ export default function FinalCtaSection() {
           Have a Project Idea? Let&apos;s Build It.
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg text-red-100">
-          Whether it&apos;s a student build or a production line upgrade, we scope honestly and ship deliberately.
+          Whether it&apos;s a student build or a production line upgrade, we
+          scope honestly and ship deliberately.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
           <a
@@ -19,7 +20,7 @@ export default function FinalCtaSection() {
             Get Your Project
           </a>
           <a
-            href="mailto:info@robomonk.ai?subject=Technotran%20—%20Project%20Inquiry"
+            href="mailto:Info@technotran.in?subject=Technotran%20—%20Project%20Inquiry"
             className="inline-flex w-full min-w-[200px] items-center justify-center rounded-xl border border-white/30 bg-white/10 px-8 py-3.5 text-base font-semibold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/15 sm:w-auto"
           >
             Contact Our Team
@@ -27,5 +28,5 @@ export default function FinalCtaSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
