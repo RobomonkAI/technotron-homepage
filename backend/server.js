@@ -8,6 +8,10 @@ const PORT = parseInt(process.env.PORT || "5001", 10);
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Technotran API is running");
+});
+
 app.use("/api", healthRoutes);
 
 app.listen(PORT, "0.0.0.0", () => {
